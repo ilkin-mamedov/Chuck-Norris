@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BAB0DE5282E922D00E35FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0DE4282E922D00E35FF4 /* AppDelegate.swift */; };
+		3BAB0DE7282E922D00E35FF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0DE6282E922D00E35FF4 /* SceneDelegate.swift */; };
+		3BAB0DE9282E922D00E35FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0DE8282E922D00E35FF4 /* ViewController.swift */; };
+		3BAB0DEC282E922D00E35FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB0DEA282E922D00E35FF4 /* Main.storyboard */; };
+		3BAB0DEE282E923000E35FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB0DED282E923000E35FF4 /* Assets.xcassets */; };
+		3BAB0DF1282E923000E35FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB0DEF282E923000E35FF4 /* LaunchScreen.storyboard */; };
+		3BAB0DFD282E93CB00E35FF4 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0DFC282E93CB00E35FF4 /* Joke.swift */; };
+		3BAB0DFF282E94CA00E35FF4 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0DFE282E94CA00E35FF4 /* Search.swift */; };
+		3BAB0E01282E957200E35FF4 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0E00282E957200E35FF4 /* JokeViewModel.swift */; };
+		3BAB0E03282E95BB00E35FF4 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0E02282E95BB00E35FF4 /* Dynamic.swift */; };
+		3BAB0E06282EAABC00E35FF4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB0E05282EAABC00E35FF4 /* SearchViewModel.swift */; };
+		4B29706B74703828CEE820CB /* Pods_Chuck_Norris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DEA54E4892B6A1786A51A2 /* Pods_Chuck_Norris.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F9267E1901EDA52A64C890D /* Pods-Chuck Norris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris.release.xcconfig"; path = "Target Support Files/Pods-Chuck Norris/Pods-Chuck Norris.release.xcconfig"; sourceTree = "<group>"; };
+		3BAB0DE1282E922D00E35FF4 /* Chuck Norris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chuck Norris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BAB0DE4282E922D00E35FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BAB0DE6282E922D00E35FF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3BAB0DE8282E922D00E35FF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BAB0DEB282E922D00E35FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BAB0DED282E923000E35FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BAB0DF0282E923000E35FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BAB0DF2282E923000E35FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BAB0DFC282E93CB00E35FF4 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		3BAB0DFE282E94CA00E35FF4 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		3BAB0E00282E957200E35FF4 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
+		3BAB0E02282E95BB00E35FF4 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		3BAB0E05282EAABC00E35FF4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		D8DEA54E4892B6A1786A51A2 /* Pods_Chuck_Norris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuck_Norris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F838921B78DC1CE318CF2A83 /* Pods-Chuck Norris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris.debug.xcconfig"; path = "Target Support Files/Pods-Chuck Norris/Pods-Chuck Norris.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BAB0DDE282E922D00E35FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B29706B74703828CEE820CB /* Pods_Chuck_Norris.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061E247A75F472815119B894 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8DEA54E4892B6A1786A51A2 /* Pods_Chuck_Norris.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BAB0DD8282E922D00E35FF4 = {
+			isa = PBXGroup;
+			children = (
+				3BAB0DE3282E922D00E35FF4 /* Chuck Norris */,
+				3BAB0DE2282E922D00E35FF4 /* Products */,
+				955D7D681B1DBCE33B3EDB91 /* Pods */,
+				061E247A75F472815119B894 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BAB0DE2282E922D00E35FF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB0DE1282E922D00E35FF4 /* Chuck Norris.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BAB0DE3282E922D00E35FF4 /* Chuck Norris */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB0DE4282E922D00E35FF4 /* AppDelegate.swift */,
+				3BAB0DE6282E922D00E35FF4 /* SceneDelegate.swift */,
+				3BAB0DF8282E928100E35FF4 /* Models */,
+				3BAB0DF9282E928600E35FF4 /* Views */,
+				3BAB0DFA282E930800E35FF4 /* ViewModels */,
+				3BAB0DED282E923000E35FF4 /* Assets.xcassets */,
+				3BAB0DF2282E923000E35FF4 /* Info.plist */,
+			);
+			path = "Chuck Norris";
+			sourceTree = "<group>";
+		};
+		3BAB0DF8282E928100E35FF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB0DFC282E93CB00E35FF4 /* Joke.swift */,
+				3BAB0DFE282E94CA00E35FF4 /* Search.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BAB0DF9282E928600E35FF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB0DE8282E922D00E35FF4 /* ViewController.swift */,
+				3BAB0DFB282E931900E35FF4 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BAB0DFA282E930800E35FF4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB0E04282E95D200E35FF4 /* Bindings */,
+				3BAB0E00282E957200E35FF4 /* JokeViewModel.swift */,
+				3BAB0E05282EAABC00E35FF4 /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3BAB0DFB282E931900E35FF4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB0DEA282E922D00E35FF4 /* Main.storyboard */,
+				3BAB0DEF282E923000E35FF4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3BAB0E04282E95D200E35FF4 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB0E02282E95BB00E35FF4 /* Dynamic.swift */,
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		955D7D681B1DBCE33B3EDB91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F838921B78DC1CE318CF2A83 /* Pods-Chuck Norris.debug.xcconfig */,
+				1F9267E1901EDA52A64C890D /* Pods-Chuck Norris.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BAB0DE0282E922D00E35FF4 /* Chuck Norris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BAB0DF5282E923000E35FF4 /* Build configuration list for PBXNativeTarget "Chuck Norris" */;
+			buildPhases = (
+				65F8CA9890D01C99C33D4186 /* [CP] Check Pods Manifest.lock */,
+				3BAB0DDD282E922D00E35FF4 /* Sources */,
+				3BAB0DDE282E922D00E35FF4 /* Frameworks */,
+				3BAB0DDF282E922D00E35FF4 /* Resources */,
+				85E131DED7115BE6F983E766 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chuck Norris";
+			productName = "Chuck Norris";
+			productReference = 3BAB0DE1282E922D00E35FF4 /* Chuck Norris.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BAB0DD9282E922D00E35FF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3BAB0DE0282E922D00E35FF4 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3BAB0DDC282E922D00E35FF4 /* Build configuration list for PBXProject "Chuck Norris" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BAB0DD8282E922D00E35FF4;
+			productRefGroup = 3BAB0DE2282E922D00E35FF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BAB0DE0282E922D00E35FF4 /* Chuck Norris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BAB0DDF282E922D00E35FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAB0DF1282E923000E35FF4 /* LaunchScreen.storyboard in Resources */,
+				3BAB0DEE282E923000E35FF4 /* Assets.xcassets in Resources */,
+				3BAB0DEC282E922D00E35FF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F8CA9890D01C99C33D4186 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chuck Norris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E131DED7115BE6F983E766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris/Pods-Chuck Norris-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris/Pods-Chuck Norris-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris/Pods-Chuck Norris-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BAB0DDD282E922D00E35FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAB0DE9282E922D00E35FF4 /* ViewController.swift in Sources */,
+				3BAB0DE5282E922D00E35FF4 /* AppDelegate.swift in Sources */,
+				3BAB0E06282EAABC00E35FF4 /* SearchViewModel.swift in Sources */,
+				3BAB0DFF282E94CA00E35FF4 /* Search.swift in Sources */,
+				3BAB0E03282E95BB00E35FF4 /* Dynamic.swift in Sources */,
+				3BAB0DFD282E93CB00E35FF4 /* Joke.swift in Sources */,
+				3BAB0E01282E957200E35FF4 /* JokeViewModel.swift in Sources */,
+				3BAB0DE7282E922D00E35FF4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BAB0DEA282E922D00E35FF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BAB0DEB282E922D00E35FF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BAB0DEF282E923000E35FF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BAB0DF0282E923000E35FF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BAB0DF3282E923000E35FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BAB0DF4282E923000E35FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BAB0DF6282E923000E35FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F838921B78DC1CE318CF2A83 /* Pods-Chuck Norris.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T439V6N83P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chuck Norris/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilkinmamedov.Chuck-Norris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BAB0DF7282E923000E35FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F9267E1901EDA52A64C890D /* Pods-Chuck Norris.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T439V6N83P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chuck Norris/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilkinmamedov.Chuck-Norris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BAB0DDC282E922D00E35FF4 /* Build configuration list for PBXProject "Chuck Norris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BAB0DF3282E923000E35FF4 /* Debug */,
+				3BAB0DF4282E923000E35FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BAB0DF5282E923000E35FF4 /* Build configuration list for PBXNativeTarget "Chuck Norris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BAB0DF6282E923000E35FF4 /* Debug */,
+				3BAB0DF7282E923000E35FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BAB0DD9282E922D00E35FF4 /* Project object */;
+}
