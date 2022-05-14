@@ -6,8 +6,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var jokeLabel: UILabel!
     
-    private var jokeViewModel = JokeViewModel()
-    private var searchViewModel = SearchViewModel()
+    private let jokeViewModel = JokeViewModel()
+    private let searchViewModel = SearchViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             if search.isEmpty {
                 jokeViewModel.fetchJoke()
             } else {
-                searchViewModel.fetchJoke(search)
+                searchViewModel.fetchJoke(by: search)
             }
         }
     }
@@ -59,11 +59,13 @@ class ViewController: UIViewController {
     }
 }
 
+// - MARK: UISearchBarDelegate
+
 extension ViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let search = searchBar.text {
-            searchViewModel.fetchJoke(search)
+            searchViewModel.fetchJoke(by: search)
         }
         
         DispatchQueue.main.async {

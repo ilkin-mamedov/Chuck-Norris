@@ -6,7 +6,7 @@ class SearchViewModel {
     var category = Dynamic("")
     var joke = Dynamic("")
     
-    func fetchJoke(_ search: String) {
+    func fetchJoke(by search: String) {
         performRequest(with: "https://api.chucknorris.io/jokes/search?query=\(search.replacingOccurrences(of: " ", with: "+"))")
     }
     
