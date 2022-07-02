@@ -3,13 +3,12 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chuck Norris-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chuck_Norris" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,11 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-KH-otJ">
-                                <rect key="frame" x="20" y="88" width="374" height="51"/>
-                                <color key="tintColor" name="AccentColor"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi6-M9-JjO">
                                 <rect key="frame" x="20" y="792" width="374" height="50"/>
                                 <constraints>
@@ -52,24 +46,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gpm-FQ-p1S" firstAttribute="top" secondItem="lar-Dw-QOP" secondAttribute="bottom" constant="20" id="83M-Bs-KPj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Nk-KH-otJ" secondAttribute="trailing" constant="20" id="8lR-j6-ToO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lar-Dw-QOP" secondAttribute="trailing" constant="20" id="BBo-zE-s2c"/>
                             <constraint firstItem="Gpm-FQ-p1S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fnt-wP-9yn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pi6-M9-JjO" secondAttribute="bottom" constant="20" id="Gul-tk-b8h"/>
                             <constraint firstItem="lar-Dw-QOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NPL-Gf-74g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gpm-FQ-p1S" secondAttribute="trailing" constant="20" id="UZk-Ou-8hy"/>
-                            <constraint firstItem="7Nk-KH-otJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WI1-PN-Pxv"/>
-                            <constraint firstItem="7Nk-KH-otJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bJ4-FJ-DCL"/>
                             <constraint firstItem="Gpm-FQ-p1S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hMp-0m-1gq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pi6-M9-JjO" secondAttribute="trailing" constant="20" id="kTl-1p-pTP"/>
                             <constraint firstItem="pi6-M9-JjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qKX-xL-vY3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chuck Norris" id="akq-mD-0gl"/>
+                    <navigationItem key="navigationItem" id="akq-mD-0gl"/>
                     <connections>
                         <outlet property="categoryLabel" destination="lar-Dw-QOP" id="fAC-zW-rue"/>
                         <outlet property="jokeLabel" destination="Gpm-FQ-p1S" id="t7u-3d-xOb"/>
-                        <outlet property="searchBar" destination="7Nk-KH-otJ" id="kEF-5H-Tyb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

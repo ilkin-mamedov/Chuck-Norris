@@ -2,7 +2,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var searchBar: UISearchBar!
+    let searchController = UISearchController(searchResultsController: nil)
+    
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var jokeLabel: UILabel!
     
@@ -12,7 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchBar.delegate = self
+        title = "Chuck Norris"
+        
+        searchController.searchBar.tintColor = UIColor(named: "AccentColor")
+        searchController.searchResultsUpdater = self
+        searchController.delegate = self
+        navigationItem.searchController = searchController
         
         jokeViewModel.fetchJoke()
         
@@ -21,11 +27,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getJokePressed(_ sender: UIButton) {
-        if let search = searchBar.text {
-            if search.isEmpty {
+        if let text = searchController.searchBar.text {
+            if text.isEmpty {
                 jokeViewModel.fetchJoke()
             } else {
-                searchViewModel.fetchJoke(by: search)
+                searchViewModel.fetchJoke(by: text)
             }
         }
     }
@@ -59,17 +65,12 @@ class ViewController: UIViewController {
     }
 }
 
-// - MARK: UISearchBarDelegate
+// - MARK: UISearchControllerDelegate, UISearchResultsUpdating
 
-extension ViewController: UISearchBarDelegate {
+extension ViewController: UISearchControllerDelegate, UISearchResultsUpdating {
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if let search = searchBar.text {
-            searchViewModel.fetchJoke(by: search)
-        }
-        
-        DispatchQueue.main.async {
-            searchBar.resignFirstResponder()
-        }
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        searchViewModel.fetchJoke(by: text)
     }
 }

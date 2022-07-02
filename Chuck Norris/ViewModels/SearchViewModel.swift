@@ -18,7 +18,7 @@ class SearchViewModel {
                         if let safeData = response.data {
                             if let search = self.parseJSON(safeData) {
                                 if search.total != 0 {
-                                    let index = Int.random(in: 0...search.total)
+                                    let index = Int.random(in: 0..<search.total)
                                     self.category.value = search.result[index].categories.first?.capitalized ?? ""
                                     self.joke.value = self.substring(text: search.result[index].value)
                                 } else {
